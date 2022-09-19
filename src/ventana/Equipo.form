@@ -171,6 +171,10 @@
                   <Connection code="modeloTabla" type="code"/>
                 </Property>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="ListSelectionListener oyenteSeleccion = new ListSelectionListener() {&#xd;&#xa;    @Override&#xd;&#xa;    public void valueChanged(ListSelectionEvent e) {&#xd;&#xa;        if (e.getValueIsAdjusting()) {&#xd;&#xa;            System.out.println(&quot;Fila seleccion&quot;);&#xd;&#xa;        }&#xd;&#xa;        &#xd;&#xa;    }&#xd;&#xa;};&#xd;&#xa;&#xd;&#xa;tabla.getSelectionModel().addListSelectionListener(oyenteSeleccion);&#xd;&#xa;"/>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="Equipo_tabla"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

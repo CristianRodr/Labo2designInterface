@@ -5,6 +5,8 @@
 package ventana;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -99,6 +101,17 @@ public class Equipo extends javax.swing.JFrame {
         });
 
         tabla.setModel(modeloTabla);
+        ListSelectionListener oyenteSeleccion = new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (e.getValueIsAdjusting()) {
+                    System.out.println("Fila seleccion");
+                }
+
+            }
+        };
+
+        tabla.getSelectionModel().addListSelectionListener(oyenteSeleccion);
         scrollTabla.setViewportView(tabla);
 
         etiquetaDatos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
