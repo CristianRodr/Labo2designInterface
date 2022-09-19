@@ -5,20 +5,33 @@
 package ventana;
 
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author an1me
  */
 public class Equipo extends javax.swing.JFrame {
-    private DefaultComboBoxModel modelo = new DefaultComboBoxModel();
+    private DefaultComboBoxModel<Persona> modelo = new DefaultComboBoxModel<Persona>();
+    //modelo para la tabla
+    private DefaultTableModel modeloTabla = new DefaultTableModel();
     /**
      * Creates new form Equipo
      */
     public Equipo() {
         llenarModeloComboBox();
+        agregarModeloTabla();
         initComponents();
         setLocationRelativeTo(null); //centrar ventana
+    }
+    
+    //Agregando Columnas a la tabla
+    private void agregarModeloTabla() {
+        modeloTabla.addColumn("Nombres");
+        modeloTabla.addColumn("Apellido");
+        modeloTabla.addColumn("Cedula");
+        modeloTabla.addColumn("Equipo");
+        modeloTabla.addColumn("Direccion");
     }
     
     private void llenarModeloComboBox() {
@@ -85,17 +98,7 @@ public class Equipo extends javax.swing.JFrame {
             }
         });
 
-        tabla.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
+        tabla.setModel(modeloTabla);
         scrollTabla.setViewportView(tabla);
 
         etiquetaDatos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
@@ -213,7 +216,17 @@ public class Equipo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInsertarActionPerformed
-        // TODO add your handling code here:
+        Persona p = (Persona)comboPersonas.getSelectedItem(); // Retorna el objeto persona que seleccione del combo box, Guardamos en la variable y hacemos un cash para convertirlo a persona
+        
+        String nombres = p.getNombres(); //Creamos String para guardar los objetos personas
+        String apellidos = p.getApellidos();
+        String cedula = p.getCedula();
+        String equipo = p.getEquipo();
+        String direccion = p.getDireccion();
+        
+        String [] persona = {nombres,apellidos,cedula,equipo,direccion}; // para agregar a la tabla creamos un arreglo en orden segun lo señalado
+        
+        modeloTabla.addRow(persona); //traemos a nuestro modelo tabla y añadimos a la fila
     }//GEN-LAST:event_botonInsertarActionPerformed
 
     private void cajaNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajaNombreActionPerformed
@@ -262,7 +275,7 @@ public class Equipo extends javax.swing.JFrame {
     private javax.swing.JTextField cajaDireccion;
     private javax.swing.JTextField cajaEquipo;
     private javax.swing.JTextField cajaNombre;
-    private javax.swing.JComboBox<String> comboPersonas;
+    private javax.swing.JComboBox<Persona> comboPersonas;
     private javax.swing.JLabel etiquetaApellidos;
     private javax.swing.JLabel etiquetaCedula;
     private javax.swing.JLabel etiquetaDatos;
