@@ -105,7 +105,19 @@ public class Equipo extends javax.swing.JFrame {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (e.getValueIsAdjusting()) {
-                    System.out.println("Fila seleccion");
+                    int filaSeleccionada = tabla.getSelectedRow(); //obtener la fila seleccionada
+
+                    String nombres = (String) modeloTabla.getValueAt(filaSeleccionada, 0); //guardando filas seleccionadas
+                    String apellidos = (String) modeloTabla.getValueAt(filaSeleccionada, 1);
+                    String cedula = (String) modeloTabla.getValueAt(filaSeleccionada, 2);
+                    String equipo = (String) modeloTabla.getValueAt(filaSeleccionada, 3);
+                    String direccion = (String) modeloTabla.getValueAt(filaSeleccionada, 4);
+
+                    cajaNombre.setText(nombres);
+                    cajaApellidos.setText(apellidos);
+                    cajaCedula.setText(cedula);
+                    cajaEquipo.setText(equipo);
+                    cajaDireccion.setText(direccion);
                 }
 
             }
