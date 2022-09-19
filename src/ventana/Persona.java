@@ -6,14 +6,15 @@ package ventana;
  * @author an1me
  */
 public class Persona {
-    private String nombres,apellidos,cedula,equipo,direccion;
+    private String nombres,apellidos,cedula,equipo,direccion,entrenador;
 
-    public Persona(String nombres, String apellidos, String cedula, String equipo, String direccion) {
+    public Persona(String nombres, String apellidos, String cedula, String equipo, String direccion, String entrenador) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.cedula = cedula;
         this.equipo = equipo;
         this.direccion = direccion;
+        this.entrenador = entrenador;
     }
 
     public String getNombres() {
@@ -55,6 +56,16 @@ public class Persona {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    public String getEntrenador() {
+        return entrenador;
+    }
+
+    public void setEntrenador(String entrenador) {
+        this.entrenador = entrenador;
+    }
+    
+    
     
     @Override
     public String toString(){

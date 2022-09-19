@@ -34,26 +34,27 @@ public class Equipo extends javax.swing.JFrame {
         modeloTabla.addColumn("Cedula");
         modeloTabla.addColumn("Equipo");
         modeloTabla.addColumn("Direccion");
+        modeloTabla.addColumn("Entrendor");
     }
     
     private void llenarModeloComboBox() {
-        modelo.addElement(new Persona("Adrián", "Ramos", "1060821234", "América de Cali", "Cali(Valle del Cauca), Calle 5 #04-12"));
-        modelo.addElement(new Persona("Iago", "Falque", "107081111", "América de Cali", "Cali(Valle del Cauca), Calle 8 #12-12"));
-        modelo.addElement(new Persona("Cristian", "Arrieta", "1050234553", "América de Cali", "Cali(Valle del Cauca), Calle 12 #21-33"));
-        modelo.addElement(new Persona("Juan David", "Pérez", "1034005112", "América de Cali", "Cali(Valle del Cauca), Calle 90 #83-33"));
-        modelo.addElement(new Persona("Luis", "Suárez", "75902123", "Atlético Nacional", "Medellin(Antioquia), Carrera 67 #58-13"));
-        modelo.addElement(new Persona("Álex", "Mejía", "1035865102", "Atlético Nacional", "Medellin(Antioquia), Manzana 20 #58-13"));
-        modelo.addElement(new Persona("Daniel", "Mantilla", "90455633", "Atlético Nacional", "Medellin(Antioquia), Carrera 67 #128-13"));
-        modelo.addElement(new Persona("Emanuel", "Olivera", "79002124", "Atlético Nacional", "Medellin(Antioquia), Carrera 133 #12-78"));
-        modelo.addElement(new Persona("Guillermo", "Celis", "1053933123", "Once Caldas", "Manizales(Caldas), Carrera 22 #52-58"));
-        modelo.addElement(new Persona("alejandro", "Barbaro", "1053495032", "Once Caldas", "Manizales(Caldas), Carrera 10 #13-45"));
-        modelo.addElement(new Persona("alejandro", "Barbaro", "1053495032", "Once Caldas", "Manizales(Caldas), Carrera 10 #13-45"));
-        modelo.addElement(new Persona("David", "Murillo", "1053867234", "Once Caldas", "Manizales(Caldas), Carrera 07 #10-11"));
-        modelo.addElement(new Persona("Esteban", "Beltran", "1053113566", "Once Caldas", "Manizales(Caldas), Carrera 21 #58-45"));
-        modelo.addElement(new Persona("Carmelo", "valencia", "170923811", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 70 #02-06"));
-        modelo.addElement(new Persona("fernando", "Uriba", "170009311", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 70 #02-06"));
-        modelo.addElement(new Persona("Freddy", "Hinestroza", "170093871", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 20 #97-15"));
-        modelo.addElement(new Persona("Jhon", "Pajoy", "170084145", "Junior de Barranquilla", "Barranquilla(Atlántico), Diagona 12 #104-03"));
+        modelo.addElement(new Persona("Adrián", "Ramos", "1060821234", "América de Cali", "Cali(Valle del Cauca), Calle 5 #04-12", "Alfredo Arias"));
+        modelo.addElement(new Persona("Iago", "Falque", "107081111", "América de Cali", "Cali(Valle del Cauca), Calle 8 #12-12", "Alfredo Arias"));
+        modelo.addElement(new Persona("Cristian", "Arrieta", "1050234553", "América de Cali", "Cali(Valle del Cauca), Calle 12 #21-33", "Alfredo Arias"));
+        modelo.addElement(new Persona("Juan David", "Pérez", "1034005112", "América de Cali", "Cali(Valle del Cauca), Calle 90 #83-33", "Alfredo Arias"));
+        modelo.addElement(new Persona("Luis", "Suárez", "75902123", "Atlético Nacional", "Medellin(Antioquia), Carrera 67 #58-13", "Alejandro Restrepo"));
+        modelo.addElement(new Persona("Álex", "Mejía", "1035865102", "Atlético Nacional", "Medellin(Antioquia), Manzana 20 #58-13", "Alejandro Restrepo"));
+        modelo.addElement(new Persona("Daniel", "Mantilla", "90455633", "Atlético Nacional", "Medellin(Antioquia), Carrera 67 #128-13", "Alejandro Restrepo"));
+        modelo.addElement(new Persona("Emanuel", "Olivera", "79002124", "Atlético Nacional", "Medellin(Antioquia), Carrera 133 #12-78", "Alejandro Restrepo"));
+        modelo.addElement(new Persona("Guillermo", "Celis", "1053933123", "Once Caldas", "Manizales(Caldas), Carrera 22 #52-58", "Diego Andres"));
+        modelo.addElement(new Persona("alejandro", "Barbaro", "1053495032", "Once Caldas", "Manizales(Caldas), Carrera 10 #13-45", "Diego Andres"));
+        modelo.addElement(new Persona("alejandro", "Barbaro", "1053495032", "Once Caldas", "Manizales(Caldas), Carrera 10 #13-45", "Diego Andres"));
+        modelo.addElement(new Persona("David", "Murillo", "1053867234", "Once Caldas", "Manizales(Caldas), Carrera 07 #10-11", "Diego Andres"));
+        modelo.addElement(new Persona("Esteban", "Beltran", "1053113566", "Once Caldas", "Manizales(Caldas), Carrera 21 #58-45", "Diego Andres"));
+        modelo.addElement(new Persona("Carmelo", "valencia", "170923811", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 70 #02-06", "Julio avelino"));
+        modelo.addElement(new Persona("fernando", "Uriba", "170009311", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 70 #02-06", "Julio avelino"));
+        modelo.addElement(new Persona("Freddy", "Hinestroza", "170093871", "Junior de Barranquilla", "Barranquilla(Atlántico), Manzana 20 #97-15", "Julio avelino"));
+        modelo.addElement(new Persona("Jhon", "Pajoy", "170084145", "Junior de Barranquilla", "Barranquilla(Atlántico), Diagona 12 #104-03", "Julio avelino"));
         
     }
 
@@ -84,10 +85,13 @@ public class Equipo extends javax.swing.JFrame {
         cajaEquipo = new javax.swing.JTextField();
         etiquetaDireccion = new javax.swing.JLabel();
         cajaDireccion = new javax.swing.JTextField();
+        etiquetaEntrenador = new javax.swing.JLabel();
+        cajaEntrenador = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        etiquetaPersona.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        etiquetaPersona.setFont(new java.awt.Font("Rockwell Condensed", 1, 24)); // NOI18N
         etiquetaPersona.setText("Jugador");
 
         comboPersonas.setModel(modelo);
@@ -112,12 +116,14 @@ public class Equipo extends javax.swing.JFrame {
                     String cedula = (String) modeloTabla.getValueAt(filaSeleccionada, 2);
                     String equipo = (String) modeloTabla.getValueAt(filaSeleccionada, 3);
                     String direccion = (String) modeloTabla.getValueAt(filaSeleccionada, 4);
+                    String entrenador = (String) modeloTabla.getValueAt(filaSeleccionada, 5);
 
                     cajaNombre.setText(nombres);
                     cajaApellidos.setText(apellidos);
                     cajaCedula.setText(cedula);
                     cajaEquipo.setText(equipo);
                     cajaDireccion.setText(direccion);
+                    cajaEntrenador.setText(entrenador);
                 }
 
             }
@@ -126,7 +132,7 @@ public class Equipo extends javax.swing.JFrame {
         tabla.getSelectionModel().addListSelectionListener(oyenteSeleccion);
         scrollTabla.setViewportView(tabla);
 
-        etiquetaDatos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        etiquetaDatos.setFont(new java.awt.Font("Rockwell Condensed", 0, 24)); // NOI18N
         etiquetaDatos.setText("Datos del Jugador");
 
         etiquetaNombre.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -150,6 +156,11 @@ public class Equipo extends javax.swing.JFrame {
         etiquetaDireccion.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         etiquetaDireccion.setText("Dirección");
 
+        etiquetaEntrenador.setText("Entrenador");
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setText("Oprime clic en la tabla para mostrar los datos del jugador en la sección datos");
+
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
@@ -158,34 +169,42 @@ public class Equipo extends javax.swing.JFrame {
             .addGroup(panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cajaDireccion)
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addComponent(comboPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
-                        .addComponent(botonInsertar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(scrollTabla, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(cajaCedula, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
-                            .addComponent(cajaNombre, javax.swing.GroupLayout.Alignment.LEADING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cajaApellidos)
-                            .addComponent(cajaEquipo)))
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(etiquetaPersona)
-                            .addComponent(etiquetaDatos)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(etiquetaNombre)
+                            .addComponent(etiquetaCedula)
+                            .addComponent(etiquetaDireccion)
+                            .addComponent(cajaNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
+                            .addComponent(cajaCedula)
+                            .addComponent(cajaDireccion)
                             .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(etiquetaNombre)
-                                .addGap(203, 203, 203)
-                                .addComponent(etiquetaApellidos))
+                                .addGap(9, 9, 9)
+                                .addComponent(etiquetaPersona))
                             .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(etiquetaCedula)
-                                .addGap(213, 213, 213)
-                                .addComponent(etiquetaEquipo))
-                            .addComponent(etiquetaDireccion))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addGap(14, 14, 14)
+                                .addComponent(etiquetaDatos)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cajaEquipo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 361, Short.MAX_VALUE)
+                            .addComponent(cajaApellidos, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cajaEntrenador)
+                            .addComponent(etiquetaApellidos)
+                            .addComponent(etiquetaEquipo)
+                            .addComponent(etiquetaEntrenador)))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(scrollTabla, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(panelLayout.createSequentialGroup()
+                                        .addComponent(comboPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(botonInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addGap(14, 14, 14)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 701, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 10, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         panelLayout.setVerticalGroup(
@@ -204,6 +223,8 @@ public class Equipo extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(etiquetaDatos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addGap(33, 33, 33)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(etiquetaNombre)
                     .addComponent(etiquetaApellidos))
@@ -212,18 +233,22 @@ public class Equipo extends javax.swing.JFrame {
                     .addComponent(cajaNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cajaApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(etiquetaCedula)
-                    .addComponent(etiquetaEquipo))
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(etiquetaEquipo)
+                    .addComponent(etiquetaCedula))
+                .addGap(5, 5, 5)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cajaEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cajaCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(etiquetaDireccion)
+                    .addComponent(etiquetaEntrenador))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cajaCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cajaEquipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(etiquetaDireccion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cajaDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                    .addComponent(cajaEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cajaDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -248,8 +273,9 @@ public class Equipo extends javax.swing.JFrame {
         String cedula = p.getCedula();
         String equipo = p.getEquipo();
         String direccion = p.getDireccion();
+        String entrenador = p.getEntrenador();
         
-        String [] persona = {nombres,apellidos,cedula,equipo,direccion}; // para agregar a la tabla creamos un arreglo en orden segun lo señalado
+        String [] persona = {nombres,apellidos,cedula,equipo,direccion,entrenador}; // para agregar a la tabla creamos un arreglo en orden segun lo señalado
         
         modeloTabla.addRow(persona); //traemos a nuestro modelo tabla y añadimos a la fila
     }//GEN-LAST:event_botonInsertarActionPerformed
@@ -298,6 +324,7 @@ public class Equipo extends javax.swing.JFrame {
     private javax.swing.JTextField cajaApellidos;
     private javax.swing.JTextField cajaCedula;
     private javax.swing.JTextField cajaDireccion;
+    private javax.swing.JTextField cajaEntrenador;
     private javax.swing.JTextField cajaEquipo;
     private javax.swing.JTextField cajaNombre;
     private javax.swing.JComboBox<Persona> comboPersonas;
@@ -305,9 +332,11 @@ public class Equipo extends javax.swing.JFrame {
     private javax.swing.JLabel etiquetaCedula;
     private javax.swing.JLabel etiquetaDatos;
     private javax.swing.JLabel etiquetaDireccion;
+    private javax.swing.JLabel etiquetaEntrenador;
     private javax.swing.JLabel etiquetaEquipo;
     private javax.swing.JLabel etiquetaNombre;
     private javax.swing.JLabel etiquetaPersona;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel panel;
     private javax.swing.JScrollPane scrollTabla;
     private javax.swing.JSeparator separador;
